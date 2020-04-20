@@ -1,0 +1,991 @@
+#
+# Results on Monday October 14 2019 18:32:16 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+# Design number was non-random = 69
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,24,0,train_correct_quest_1,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,24,0,train_correct_quest_1,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,695
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,63,0,train_wrong_quest_0,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,63,0,train_wrong_quest_0,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,4361
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,27,0,train_correct_quest_4,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,27,0,train_correct_quest_4,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,946
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,76,0,train_wrong_quest_13,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,76,0,train_wrong_quest_13,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1587
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,68,0,train_wrong_quest_5,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,68,0,train_wrong_quest_5,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,596
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,127,0,filler1_correct_quest_4,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,127,0,filler1_correct_quest_4,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,610
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,519,0,test1_correct_quest_6,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,519,0,test1_correct_quest_6,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,0,853
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,539,0,test1_wrong_quest_6,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,539,0,test1_wrong_quest_6,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,0,528
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,173,0,filler1_wrong_quest_10,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,173,0,filler1_wrong_quest_10,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1201
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,140,0,filler1_correct_quest_17,NULL,
+1571077937,834861d489e665ea9987ec89ab2f20b1,ComicCaption,140,0,filler1_correct_quest_17,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,606
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_description,zxdfasdf
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_description,asdfasdfasdf
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_description,asdfadsf
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,aha_description,asdfsdafads
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,yes
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,yes
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,yes
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,yes
+1571077937,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,aha_yesNo,1
+#
+# Results on Monday October 14 2019 18:38:12 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+# Design number was non-random = 70
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,26,0,train_correct_quest_3,NULL,
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,26,0,train_correct_quest_3,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,1708
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,27,0,train_correct_quest_4,NULL,
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,27,0,train_correct_quest_4,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,656
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,164,0,filler1_wrong_quest_1,NULL,
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,164,0,filler1_wrong_quest_1,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,961
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,515,0,test1_correct_quest_2,NULL,
+1571078292,834861d489e665ea9987ec89ab2f20b1,ComicCaption,515,0,test1_correct_quest_2,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,1,891
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_description,
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,name="test_description",
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_description,
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,aha_description,
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+1571078292,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+#
+# Results on Monday October 14 2019 19:08:25 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+# Design number was non-random = 71
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,30,0,train_correct_quest_7,NULL,
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,30,0,train_correct_quest_7,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,1210
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,26,0,train_correct_quest_3,NULL,
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,26,0,train_correct_quest_3,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,609
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,541,0,test1_wrong_quest_8,NULL,
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,541,0,test1_wrong_quest_8,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,1,1310
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,518,0,test1_correct_quest_5,NULL,
+1571080105,834861d489e665ea9987ec89ab2f20b1,ComicCaption,518,0,test1_correct_quest_5,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,1,463
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_description,
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,name="test_description",
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_description,
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,aha_description,
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,train_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+1571080105,834861d489e665ea9987ec89ab2f20b1,Form,663,0,survey,NULL,test_approach,no
+#
+# Results on Thursday October 24 2019 16:37:53 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36
+# Design number was non-random = 72
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,38,0,train_correct_quest_15,NULL,
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,38,0,train_correct_quest_15,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,6533
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,72,0,train_wrong_quest_9,NULL,
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,72,0,train_wrong_quest_9,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,0,1963
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,539,0,test1_wrong_quest_6,NULL,
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,539,0,test1_wrong_quest_6,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,1,9432
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,537,0,test1_wrong_quest_4,NULL,
+1571935073,25325ea821eb2c2d026639e342995697,ComicCaption,537,0,test1_wrong_quest_4,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,0,1755
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,train_description,
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,name="test_description",
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,test_description,
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,aha_description,
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,train_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,train_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,train_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,train_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,test_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,test_approach,no
+1571935073,25325ea821eb2c2d026639e342995697,Form,663,0,survey,NULL,test_approach,no
+#
+# Results on Monday November 04 2019 17:38:59 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+# Design number was non-random = 73
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,1,0,intro,NULL,,yes
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,75,0,train_wrong_quest_10,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,75,0,train_wrong_quest_10,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,693
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,38,0,train_correct_quest_13,NULL,
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,38,0,train_correct_quest_13,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,1,749
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,176,0,filler1_wrong_quest_11,NULL,
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,176,0,filler1_wrong_quest_11,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,0,3228
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,183,0,filler1_wrong_quest_18,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,ComicCaption,183,0,filler1_wrong_quest_18,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1329
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,name="test_description",
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,test_description,
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,aha_description,
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,train_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,train_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,train_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,train_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,test_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,test_approach,no
+1572889140,7147c395cc7ceb5a242c7e431ba70da8,Form,665,0,survey,NULL,test_approach,no
+#
+# Results on Tuesday November 26 2019 15:27:09 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+# Design number was non-random = 74
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782030,76fb65344638b66696b4bded1b337c93,Form,1,0,intro,NULL,,yes
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,79,0,train_wrong_quest_14,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,79,0,train_wrong_quest_14,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1162
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,68,0,train_wrong_quest_3,NULL,
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,68,0,train_wrong_quest_3,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1687
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,182,0,filler1_wrong_quest_17,NULL,
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,182,0,filler1_wrong_quest_17,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,0,1051
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,139,0,filler1_correct_quest_14,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1574782030,76fb65344638b66696b4bded1b337c93,ComicCaption,139,0,filler1_correct_quest_14,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,658
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,name="test_description",
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_description,
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,aha_description,
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782030,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+#
+# Results on Tuesday November 26 2019 15:28:47 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+# Design number was non-random = 75
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782127,76fb65344638b66696b4bded1b337c93,Form,1,0,intro,NULL,,yes
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,77,0,train_wrong_quest_12,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,77,0,train_wrong_quest_12,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,872
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,80,0,train_wrong_quest_15,NULL,
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,80,0,train_wrong_quest_15,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,Yes,0,749
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,174,0,filler1_wrong_quest_9,NULL,
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,174,0,filler1_wrong_quest_9,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1056
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,143,0,filler1_correct_quest_18,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1574782127,76fb65344638b66696b4bded1b337c93,ComicCaption,143,0,filler1_correct_quest_18,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,765
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,name="test_description",
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_description,
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,aha_description,
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782127,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+#
+# Results on Tuesday November 26 2019 15:39:51 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+# Design number was non-random = 76
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782791,76fb65344638b66696b4bded1b337c93,Form,1,0,intro,NULL,,yes
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,39,0,train_correct_quest_14,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,39,0,train_correct_quest_14,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,843
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,67,0,train_wrong_quest_2,NULL,
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,67,0,train_wrong_quest_2,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,607
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,179,0,filler1_wrong_quest_14,NULL,
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,179,0,filler1_wrong_quest_14,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,1,1685
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,135,0,filler1_correct_quest_10,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1574782791,76fb65344638b66696b4bded1b337c93,ComicCaption,135,0,filler1_correct_quest_10,NULL,<p id='wrong_instruct'><i>Is this the correct image for that word?</i></p>,No,0,1147
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,name="test_description",
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_description,
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,aha_description,
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,prolific_id,
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,train_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+1574782791,76fb65344638b66696b4bded1b337c93,Form,665,0,survey,NULL,test_approach,no
+#
+# Results on Wednesday December 11 2019 21:53:27 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+# Design number was non-random = 77
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,1,0,intro,NULL,,yes
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,27,0,train_correct_audio_2,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,27,0,train_correct_audio_2,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OnePi_g06w03t3.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OneKo_g06w03t2.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,0,9663
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,31,0,train_correct_audio_6,NULL,
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,31,0,train_correct_audio_6,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OneKo_g06w07t3.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OnePi_g06w07t1.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,1,9191
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,0,1681
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,335,0,test1_wrong_quest_0,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1576101208,038b7119b64ea671991e5666fce53cd7,ComicCaption,335,0,test1_wrong_quest_0,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,1,1183
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,name="test_description",
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_description,
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,aha_description,
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,prolific_id,
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101208,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+#
+# Results on Wednesday December 11 2019 21:55:18 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+# Design number was non-random = 78
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,1,0,intro,NULL,,yes
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,42,0,train_correct_audio_17,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,42,0,train_correct_audio_17,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoPi_g07w08t1.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoKo_g07w08t4.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,1,1000
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,36,0,train_correct_audio_11,NULL,
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,36,0,train_correct_audio_11,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoPi_g07w02t5.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoKo_g07w02t3.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,1,1152
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,No,0,1133
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,335,0,test1_wrong_quest_0,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1576101319,038b7119b64ea671991e5666fce53cd7,ComicCaption,335,0,test1_wrong_quest_0,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,0,1072
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,name="test_description",
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_description,
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,aha_description,
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,prolific_id,
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101319,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+#
+# Results on Wednesday December 11 2019 21:57:16 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+# Design number was non-random = 79
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,1,0,intro,NULL,,yes
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,36,0,train_correct_audio_11,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,36,0,train_correct_audio_11,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoPi_g05w02t5.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/TwoKo_g05w02t2.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,1,1051
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,31,0,train_correct_audio_6,NULL,
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,31,0,train_correct_audio_6,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OnePi_g04w07t3.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OneKo_g04w07t2.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,B,0,2541
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,315,0,test1_correct_quest_0,NULL,<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>,Yes,1,1504
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,65,0,filler1_correct_audio_0,NULL,
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Field name.
+#     Col. 9: Field value.
+1576101437,038b7119b64ea671991e5666fce53cd7,ComicCaption,65,0,filler1_correct_audio_0,NULL,<audio style='visibility:hidden;' id='sil_1' controls autoplay onended='audioEndPreA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='sil_2' controls onended='audioEndPreB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/silence.wav'></audio><audio style='visibility:hidden;' id='a_player' controls onended='audioEndPostA()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OnePi_g04w01t1.wav' type='audio/wav'></audio><audio style='visibility:hidden;' id='b_player' controls onended='audioEndPostB()'><source src='https://people.umass.edu/bprickett/Phono_IE_Stimuli/OneKo_g04w01t3.wav' type='audio/wav'></audio><script>function audioEndPreA() {a = document.getElementById('option_A');a.style.color = 'red';a.style.fontWeight = 'bold';document.getElementById('a_player').play();}function audioEndPostA() {a = document.getElementById('option_A');a.style.color = 'black';a.style.fontWeight = 'normal';document.getElementById('sil_2').play();}function audioEndPreB() {b = document.getElementById('option_B');b.style.color = 'red';b.style.fontWeight = 'bold';document.getElementById('b_player').play();}function audioEndPostB() {b = document.getElementById('option_B'); b.style.color = 'black';b.style.fontWeight = 'normal';}</script><table align='center'><tr><td align='center'><div align='center'><i>Which of these is the correct word for that picture?</i></div></td></tr></table><table align='center'><tr><td><font color='white'>__</font><span id='option_A'>A</span></td><td><p style='visibility:hidden;'>__</p></td><td><font color='white'>__</font><span id='option_B'>B</div></td></tr></table>,A,1,3963
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_description,
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,name="test_description",
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_description,
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,aha_description,
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,prolific_id,
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,train_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
+1576101437,038b7119b64ea671991e5666fce53cd7,Form,465,0,survey,NULL,test_approach,no
