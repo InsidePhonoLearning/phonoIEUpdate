@@ -7,9 +7,10 @@
 //***************************************
 
 //Conditions:
-var pi_with = "one";
-var i_or_e = "explicit"
-var test_run = true
+var pi_with = "one"; //one or two
+var i_or_e = "implicit" //explicit or implicit
+var test_run = false; //if true, only a small subset of trials in each phase will be presented
+var train_in_block = true; //if false, most of training is interspersed with testing; if true, training is in a single, long block
     
 //Functions
 function shuffle(array) {
@@ -31,7 +32,7 @@ var one_syll_correct_test = [group_nums[2], group_nums[3]];
 var two_syll_correct_test = [group_nums[4], group_nums[5]];
 var one_syll_wrong_test = [group_nums[6], group_nums[7]];
 var two_syll_wrong_test = [group_nums[8], group_nums[9]];  
-
+    
 //Deal with token orderings:
 if (pi_with == "two"){
     var syll_nums = ["OneKo", "TwoPi"];   
@@ -347,7 +348,27 @@ for (i = 0; i < train_audios_correct.length; i ++){
     filler4_answers.push(["filler4_answer_"+i, "my_Separator", {normalMessage:filler4_answer, errorMessage:"", transfer:2000}])
     filler4_names.push(["filler4_correct_quest_"+i, "filler4_correct_audio_"+i, "feedback", "filler4_answer_"+i]);
 }
-shuffle(train_names);
+    
+//If we want all our training trials in a single block, 
+//mix the fillers in with the regular training trials:
+if (train_in_block){
+    train1_names = train_names;
+    train2_names = filler1_names;
+    train3_names = filler2_names;
+    train4_names = filler3_names;
+    train5_names = filler4_names;
+
+    //Shuffle training trials up:
+    shuffle(train1_names);//  og training trials
+    shuffle(train2_names);// = filler1_names;
+    shuffle(train3_names);// = filler2_names;
+    shuffle(train4_names);// = filler3_names;
+    shuffle(train5_names);// = filler4_names;
+}
+else{   
+    //Shuffle training trials up:   
+    shuffle(train_names);
+}
 
 //**************************************
 // BUILD TESTING TRIALS
@@ -363,61 +384,95 @@ var test4_audios_wrong = [];
 var train_stim_num = img_ix.length;
 var counter = 0;
 
+//Organize all the test stimuli into different blocks:
 for  (j = 0; j < one_syll_correct_test.length; j++){
     for (k = 0; k < word_nums.length; k++){
+            //If /-pi/ goes with two-syllable words:
             if (pi_with == "two"){
                 if (counter < 5){
+                    //One syllable word, correctly produced:
                     test1_audios_correct.push(all_syll_nums[0]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test1_audios_wrong.push(all_syll_nums[1]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test1_audios_correct.push(all_syll_nums[2]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test1_audios_wrong.push(all_syll_nums[3]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 5 && counter < 10){
+                    //One syllable word, correctly produced:
                     test2_audios_correct.push(all_syll_nums[0]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test2_audios_wrong.push(all_syll_nums[1]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test2_audios_correct.push(all_syll_nums[2]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test2_audios_wrong.push(all_syll_nums[3]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 10 && counter < 15){
+                    //One syllable word, correctly produced:
                     test3_audios_correct.push(all_syll_nums[0]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test3_audios_wrong.push(all_syll_nums[1]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test3_audios_correct.push(all_syll_nums[2]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test3_audios_wrong.push(all_syll_nums[3]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 15 && counter < 20){
+                    //One syllable word, correctly produced:
                     test4_audios_correct.push(all_syll_nums[0]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test4_audios_wrong.push(all_syll_nums[1]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test4_audios_correct.push(all_syll_nums[2]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test4_audios_wrong.push(all_syll_nums[3]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }   
             }
+            //If /-pi/ goes with one-syllable words: 
             if (pi_with == "one"){   
                 if (counter < 5){
+                    //One syllable word, correctly produced:
                     test1_audios_correct.push(all_syll_nums[1]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test1_audios_wrong.push(all_syll_nums[0]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test1_audios_correct.push(all_syll_nums[3]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test1_audios_wrong.push(all_syll_nums[2]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 5 && counter < 10){
+                    //One syllable word, correctly produced:
                     test2_audios_correct.push(all_syll_nums[1]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test2_audios_wrong.push(all_syll_nums[0]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test2_audios_correct.push(all_syll_nums[3]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test2_audios_wrong.push(all_syll_nums[2]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 10 && counter < 15){
+                    //One syllable word, correctly produced:
                     test3_audios_correct.push(all_syll_nums[1]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test3_audios_wrong.push(all_syll_nums[0]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test3_audios_correct.push(all_syll_nums[3]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test3_audios_wrong.push(all_syll_nums[2]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }
                 if (counter >= 15 && counter < 20){
+                    //One syllable word, correctly produced:
                     test4_audios_correct.push(all_syll_nums[1]+"_"+one_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[1]+"_"+one_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //One syllable word, incorrectly produced:
                     test4_audios_wrong.push(all_syll_nums[0]+"_"+one_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[0]+"_"+one_syll_wrong_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, correctly produced:
                     test4_audios_correct.push(all_syll_nums[3]+"_"+two_syll_correct_test[j]+word_nums[k]+get_t[all_syll_nums[3]+"_"+two_syll_correct_test[j]+"_"+word_nums[k]][0]);
+                    //Two syllable word, incorrectly produced:
                     test4_audios_wrong.push(all_syll_nums[2]+"_"+two_syll_wrong_test[j]+word_nums[k]+get_t[all_syll_nums[2]+"_"+two_syll_wrong_test[j]+"_"+word_nums[k]][0]);
                 }                  
             }
-              
             counter ++;   
     }    
 } 
@@ -450,7 +505,9 @@ var test4_wrong_quests = [];
 var test4_answers = []
 var test4_names = [];
 
+//Create test trials, organized by block:
 for (i = 0; i < test1_audios_correct.length; i ++){
+    //Block  1
     var test1_question = "<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>";
     var test1_correct_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='correct_audio' controls autoplay><source src='".concat(audio_dir).concat(test1_audios_correct[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
     var test1_wrong_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='wrong_audio' controls autoplay><source src='".concat(audio_dir).concat(test1_audios_wrong[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
@@ -462,6 +519,7 @@ for (i = 0; i < test1_audios_correct.length; i ++){
     test1_names.push(["test1_correct_audio_"+i, "test1_correct_quest_"+i,"test1_answer_"+i]);
     test1_names.push(["test1_wrong_audio_"+i, "test1_wrong_quest_"+i,"test1_answer_"+i]);
 
+    //Block  2    
     var test2_question = "<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>";
     var test2_correct_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='correct_audio' controls autoplay><source src='".concat(audio_dir).concat(test2_audios_correct[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
     var test2_wrong_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='wrong_audio' controls autoplay><source src='".concat(audio_dir).concat(test2_audios_wrong[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
@@ -474,6 +532,7 @@ for (i = 0; i < test1_audios_correct.length; i ++){
     test2_names.push(["test2_correct_audio_"+i, "test2_correct_quest_"+i]);
     test2_names.push(["test2_wrong_audio_"+i, "test2_wrong_quest_"+i]);
 
+    //Block  3    
     var test3_question = "<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>";
     var test3_correct_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='correct_audio' controls autoplay><source src='".concat(audio_dir).concat(test3_audios_correct[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
     var test3_wrong_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='wrong_audio' controls autoplay><source src='".concat(audio_dir).concat(test3_audios_wrong[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
@@ -486,6 +545,7 @@ for (i = 0; i < test1_audios_correct.length; i ++){
     test3_names.push(["test3_correct_audio_"+i, "test3_correct_quest_"+i]);
     test3_names.push(["test3_wrong_audio_"+i, "test3_wrong_quest_"+i]);
 
+    //Block  4    
     var test4_question = "<p id='wrong_instruct'><i>Did the word you just listened to sound like it belongs to the language you're learning?</i></p>";
     var test4_correct_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='correct_audio' controls autoplay><source src='".concat(audio_dir).concat(test4_audios_correct[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
     var test4_wrong_audio = "<table align='center'><tr><td align='center'><p><i>Listen to the following word:</i></p></td></tr><tr><td><p style='visibility:hidden;'>white space</p></td></tr><tr><td><audio id='wrong_audio' controls autoplay><source src='".concat(audio_dir).concat(test4_audios_wrong[i]).concat(".wav' type='audio/wav'></audio></td></tr></table>");
@@ -506,13 +566,19 @@ for (i = 0; i < test1_audios_correct.length; i ++){
 //***********************
 
 //Start material:
+if (i_or_e == "explicit"){
+    welcome_screen = "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word sounds right for this language. After you choose a word, the word that is a part of the language will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to figure out the rule about the words in this new language.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>";
+}
+else {
+    welcome_screen = "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>";
+}
 var items = [
                ["preload", "Preloader", {images: IMAGES_TO_PRELOAD}], 
                [
                    "intro", 
                    "Form", 
                    {
-                       html: "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>", continueMessage: "Click here to continue",
+                       html: welcome_screen, 
                        continueMessage: "Continue",
                        continueOnReturn: false
                    }
@@ -570,6 +636,20 @@ items = items.concat(test4_correct_quests);
 items = items.concat(test4_wrong_audios);
 items = items.concat(test4_wrong_quests);
 
+//Message for the middle of the experiment:
+if (train_in_block){
+    var testIntro_message = "Now you will begin the test phase. These trials will ask you to answer a different kind of question about the language you've been learning and  will not provide you with feedback.";
+    
+    var train2Intro_message = "<h3>Training Block 1 Complete</h3><p>Nice work! You've completed the first block of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+    var train3Intro_message = "<h3>Training Block 2 Complete</h3><p>You've now completed the first two blocks of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+    var train4Intro_message = "<h3>Training Block 3 Complete</h3><p>You just finished the third block of training—only a few more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+    var train5Intro_message = "<h3>Training Block 4 Complete</h3><p>Great job! You just finished the fourth block of training—only one more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+     
+}
+else {
+    var testIntro_message ="Now you will begin the test phase. Most trials will be the same as training, however some will ask you to answer a different kind of question about the language you've been learning and will not provide you with feedback.";
+}
+
 //Ending material:
 items = items.concat([    
                [
@@ -604,13 +684,41 @@ items = items.concat([
                               "<div><textarea rows='1' cols='50' name='prolific_id'></textarea><br><br></div>"
                    }
                ],
+                   [
+                   "train2_intro", 
+                   "Message", 
+                   {
+                       html:train2Intro_message
+                   }
+               ],
                [
-                   "phaseSeperator", 
+                   "train3_intro", 
+                   "Message", 
+                   {
+                       html:train3Intro_message
+                   }
+               ],
+               [
+                   "train4_intro", 
+                   "Message", 
+                   {
+                       html:train4Intro_message
+                   }
+               ],
+               [
+                   "train5_intro", 
+                   "Message", 
+                   {
+                       html:train5Intro_message
+                   }
+               ],
+               [
+                   "test_intro", 
                    "Message", 
                    {
                        html: [
                                "div",
-                               ["p", "Now you will begin the test phase. Most trials will be the same as training, however some will ask you to answer a different kind of question about the language you've been learning."],
+                               ["p", testIntro_message],
                                ["p", "Take your time and be sure to answer each question to the best of your ability."],
                              ]
                    }
@@ -627,64 +735,108 @@ items = items.concat([
           ]);
 
 //Define sequence of experiment; preload must be first
-var test_block_1 = test1_names.concat(filler1_names);
-var test_block_2 = test2_names.concat(filler2_names); 
-var test_block_3 = test3_names.concat(filler3_names);
-var test_block_4 = test4_names.concat(filler4_names);  
 var all_trials = ["preload", "intro", "audio_test"];
-var ending = ["survey", "sr", "end"];
-                                        
-if (test_run){
-    //Train
-    for (i = 0; i < 2; i ++){
-        all_trials = all_trials.concat(train_names[i]);
-        all_trials.push("sep")
-    }
-    all_trials.push("phaseSeperator")        
+var ending = ["survey", "sr", "end"]; 
+
+//Combine/Slice arrays as needed:
+if (train_in_block){
+    if (test_run){
+        var test_block_1 = test1_names.slice(0,2);
+        var test_block_2 = test2_names.slice(0,2); 
+        var test_block_3 = test3_names.slice(0,2);
+        var test_block_4 = test4_names.slice(0,2);
         
-    //Test1        
-    all_trials = all_trials.concat(test1_names[0]);
-    all_trials.push("sep")
-    all_trials = all_trials.concat(filler1_names[0]);
-    all_trials.push("sep")    
-        
+        train1_names = train1_names.slice(0,2);
+        train2_names = train2_names.slice(0,2);
+        train3_names = train3_names.slice(0,2);
+        train4_names = train4_names.slice(0,2);
+        train5_names = train5_names.slice(0,2);
+    else {
+        var test_block_1 = test1_names;
+        var test_block_2 = test2_names; 
+        var test_block_3 = test3_names;
+        var test_block_4 = test4_names;      
+    }          
 }
-else {  
-    //Train
-    for (i = 0; i < train_names.length; i ++){
-       all_trials = all_trials.concat(train_names[i]);
-       all_trials.push("sep")
+else {
+    if (test_run){
+        var test_block_1 = test1_names.concat(filler1_names).slice(0,2);
+        var test_block_2 = test2_names.concat(filler2_names).slice(0,2); 
+        var test_block_3 = test3_names.concat(filler3_names).slice(0,2);
+        var test_block_4 = test4_names.concat(filler4_names).slice(0,2); 
+        train_names = train_names.slice(0,2);  
     }
-    all_trials.push("phaseSeperator")
+    else{
+        var test_block_1 = test1_names.concat(filler1_names);
+        var test_block_2 = test2_names.concat(filler2_names); 
+        var test_block_3 = test3_names.concat(filler3_names);
+        var test_block_4 = test4_names.concat(filler4_names); 
+    } 
+
+}                                         
+
+//Train
+    if (train_in_block){
+        for (i = 0; i < train1_names.length; i ++){
+            all_trials = all_trials.concat(train1_names[i]);
+            all_trials.push("sep");
+        }
+                
+        all_trials.push("train2_intro"); 
+        for (i = 0; i < train2_names.length; i ++){
+            all_trials = all_trials.concat(train2_names[i]);
+            all_trials.push("sep");
+        }
+                
+        all_trials.push("train3_intro"); 
+        for (i = 0; i < train3_names.length; i ++){
+            all_trials = all_trials.concat(train3_names[i]);
+            all_trials.push("sep");
+        }
+                
+        all_trials.push("train4_intro"); 
+        for (i = 0; i < train4_names.length; i ++){
+            all_trials = all_trials.concat(train4_names[i]);
+            all_trials.push("sep");
+        }
+                
+        all_trials.push("test_intro"); 
+    }
+    else{
+        for (i = 0; i < train_names.length; i ++){
+            all_trials = all_trials.concat(train_names[i]);
+            all_trials.push("sep");
+        }
+        all_trials.push("test_intro");
+    }
             
-    //Test1        
+//Test1        
     shuffle(test_block_1)   
-    for (i = 0; i < test_block_1.length; i ++){
+        for (i = 0; i < test_block_1.length; i ++){
         all_trials = all_trials.concat(test_block_1[i]);
         all_trials.push("sep")
     }
      
-    //Test2      
+//Test2      
     shuffle(test_block_2)   
-    for (i = 0; i < test_block_2.length; i ++){
+            for (i = 0; i < test_block_2.length; i ++){
         all_trials = all_trials.concat(test_block_2[i]);
         all_trials.push("sep")
     }
 
-    //Test3      
+//Test3      
     shuffle(test_block_3)   
-    for (i = 0; i < test_block_3.length; i ++){
+            for (i = 0; i < test_block_3.length; i ++){
         all_trials = all_trials.concat(test_block_3[i]);
         all_trials.push("sep")
     }
 
-    //Test4     
+//Test4     
     shuffle(test_block_4)   
-    for (i = 0; i < test_block_4.length; i ++){
+            for (i = 0; i < test_block_4.length; i ++){
         all_trials = all_trials.concat(test_block_4[i]);
         all_trials.push("sep")
-    }
-}          
+    }          
         
 //Ending
 all_trials = all_trials.concat(ending) 
