@@ -9,8 +9,8 @@
 //Conditions:
 var pi_with = "one"; //one or two
 var i_or_e = "implicit" //explicit or implicit
-var test_run = false; //if true, only a small subset of trials in each phase will be presented
-var train_in_block = true; //if false, most of training is interspersed with testing; if true, training is in a single, long block
+var test_run = true; //if true, only a small subset of trials in each phase will be presented
+var train_in_block = true; //This needs to be true! If you set it to false, no promises as to how many bugs there are.
     
 //Functions
 function shuffle(array) {
@@ -570,7 +570,7 @@ if (i_or_e == "explicit"){
     welcome_screen = "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word sounds right for this language. After you choose a word, the word that is a part of the language will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to figure out the rule about the words in this new language.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>";
 }
 else {
-    welcome_screen = "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>";
+    welcome_screen = "<h3>Welcome!</h3><p>In this experiment you will be learning the words of a new language. You will see a picture, and then hear two words.</p><ul><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should start to recognize some of the words.</li></ul><p>Be sure to be using headphones so that you can carefully listen to each word. Also, please use a computer (as opposed to a smart phone), so that you can clearly see all of the pictures.</p><p><input type='checkbox' class='obligatory'> I have read the <a href='https://people.umass.edu/bprickett/ConsentForm_PhonoIE.pdf' target='_blank'>consent form</a> (as well as the instructions above) and agree to participate in this experiment.</p>";
 }
 var items = [
                ["preload", "Preloader", {images: IMAGES_TO_PRELOAD}], 
@@ -638,13 +638,29 @@ items = items.concat(test4_wrong_quests);
 
 //Message for the middle of the experiment:
 if (train_in_block){
-    var testIntro_message = "Now you will begin the test phase. These trials will ask you to answer a different kind of question about the language you've been learning and  will not provide you with feedback.";
+    if (i_or_e == "explicit"){
+        var test1Intro_message = "<h3>Testing Block 1</h3><p>You've finished training and will now begin the test phase. You're going to be asked questions about new words and you should apply any rules you've figured out to the questions you're asked. Use what you've been learning about words from training to determine if the new words are also part of the language or not.</p>(Note that you will no longer be provided with feedback on your answers!)";
+        var test2Intro_message = "<h3>Testing Block 2</h3><p>You've now finished the first block of testing. Remember, you're going to be asked questions about new words and you should apply any rules you've figured out to the questions you're asked. Use what you've been learning about words from training to determine if the new words are also part of the language or not.</p>";
+        var test3Intro_message = "<h3>Testing Block 3</h3><p>You're halfway through the test phase. Remember, you're going to be asked questions about new words and you should apply any rules you've figured out to the questions you're asked. Use what you've been learning about words from training to determine if the new words are also part of the language or not.</p>";
+        var test4Intro_message = "<h3>Testing Block 4</h3><p>Just one more testing block left! Remember, you're going to be asked questions about new words and you should apply any rules you've figured out to the questions you're asked. Use what you've been learning about words from training to determine if the new words are also part of the language or not.</p>";
     
-    var train2Intro_message = "<h3>Training Block 1 Complete</h3><p>Nice work! You've completed the first block of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
-    var train3Intro_message = "<h3>Training Block 2 Complete</h3><p>You've now completed the first two blocks of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
-    var train4Intro_message = "<h3>Training Block 3 Complete</h3><p>You just finished the third block of training—only a few more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
-    var train5Intro_message = "<h3>Training Block 4 Complete</h3><p>Great job! You just finished the fourth block of training—only one more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
-     
+        var train2Intro_message = "<h3>Training Block 1 Complete</h3><p>Nice work! You've completed the first block of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+        var train3Intro_message = "<h3>Training Block 2 Complete</h3><p>You've now completed the first two blocks of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+        var train4Intro_message = "<h3>Training Block 3 Complete</h3><p>You just finished the third block of training—only a few more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+        var train5Intro_message = "<h3>Training Block 4 Complete</h3><p>Great job! You just finished the fourth block of training—only one more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should be able to learn which words match which pictures in this new language.</li></ul>";
+     }
+     else {
+        var test1Intro_message = "<h3>Testing Block 1</h3><p>You've finished training and will now begin the test phase. You're going to hear some new words that you haven't learned. You'll be asked whether these new words sound like they are part of the same language you have been learning.</p>(Note that you will no longer be provided with feedback on your answers!)";
+        var test2Intro_message = "<h3>Testing Block 2</h3><p>You've now finished the first block of testing. Remember, you're going to hear some new words that you haven't learned. You'll be asked whether these new words sound like they are part of the same language you have been learning.</p>";
+        var test3Intro_message = "<h3>Testing Block 3</h3><p>You're halfway through the test phase. Remember, you're going to hear some new words that you haven't learned. You'll be asked whether these new words sound like they are part of the same language you have been learning.</p>";
+        var test4Intro_message = "<h3>Testing Block 4</h3><p>Just one more testing block left! Remember, you're going to hear some new words that you haven't learned. You'll be asked whether these new words sound like they are part of the same language you have been learning.</p>";
+          
+        var train2Intro_message = "<h3>Training Block 1 Complete</h3><p>Nice work! You've completed the first block of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should start to recognize some of the words. </li></ul>";
+        var train3Intro_message = "<h3>Training Block 2 Complete</h3><p>You've now completed the first two blocks of training. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should start to recognize some of the words. </li></ul>";
+        var train4Intro_message = "<h3>Training Block 3 Complete</h3><p>You just finished the third block of training—only a few more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should start to recognize some of the words. </li></ul>";
+        var train5Intro_message = "<h3>Training Block 4 Complete</h3><p>Great job! You just finished the fourth block of training—only one more to go. Remember:</p><ul><li>You'll see a picture, and then hear two words.</li><li>Your task is to decide which word correctly describes the picture. After you choose a word, the correct word for that picture will be played.</li><li>At first you will just have to guess, but as the experiment goes on you should start to recognize some of the words. </li></ul>";
+       
+     }
 }
 else {
     var testIntro_message ="Now you will begin the test phase. Most trials will be the same as training, however some will ask you to answer a different kind of question about the language you've been learning and will not provide you with feedback.";
@@ -713,14 +729,31 @@ items = items.concat([
                    }
                ],
                [
-                   "test_intro", 
+                   "test1_intro", 
                    "Message", 
                    {
-                       html: [
-                               "div",
-                               ["p", testIntro_message],
-                               ["p", "Take your time and be sure to answer each question to the best of your ability."],
-                             ]
+                       html: test1Intro_message
+                   }
+               ],
+               [
+                   "test2_intro", 
+                   "Message", 
+                   {
+                       html: test2Intro_message
+                   }
+               ],
+               [
+                   "test3_intro", 
+                   "Message", 
+                   {
+                       html: test3Intro_message
+                   }
+               ],
+               [
+                   "test4_intro", 
+                   "Message", 
+                   {
+                       html: test4Intro_message
                    }
                ],
                ["sr", "__SendResults__", { }],
@@ -751,6 +784,7 @@ if (train_in_block){
         train3_names = train3_names.slice(0,2);
         train4_names = train4_names.slice(0,2);
         train5_names = train5_names.slice(0,2);
+    }
     else {
         var test_block_1 = test1_names;
         var test_block_2 = test2_names; 
@@ -799,39 +833,40 @@ else {
             all_trials = all_trials.concat(train4_names[i]);
             all_trials.push("sep");
         }
-                
-        all_trials.push("test_intro"); 
     }
     else{
         for (i = 0; i < train_names.length; i ++){
             all_trials = all_trials.concat(train_names[i]);
             all_trials.push("sep");
         }
-        all_trials.push("test_intro");
     }
             
-//Test1        
+//Test1  
+    all_trials.push("test1_intro");      
     shuffle(test_block_1)   
         for (i = 0; i < test_block_1.length; i ++){
         all_trials = all_trials.concat(test_block_1[i]);
         all_trials.push("sep")
     }
      
-//Test2      
+//Test2   
+    all_trials.push("test2_intro");     
     shuffle(test_block_2)   
             for (i = 0; i < test_block_2.length; i ++){
         all_trials = all_trials.concat(test_block_2[i]);
         all_trials.push("sep")
     }
 
-//Test3      
+//Test3 
+    all_trials.push("test3_intro");      
     shuffle(test_block_3)   
             for (i = 0; i < test_block_3.length; i ++){
         all_trials = all_trials.concat(test_block_3[i]);
         all_trials.push("sep")
     }
 
-//Test4     
+//Test4  
+    all_trials.push("test4_intro");     
     shuffle(test_block_4)   
             for (i = 0; i < test_block_4.length; i ++){
         all_trials = all_trials.concat(test_block_4[i]);
@@ -864,4 +899,3 @@ var defaults = [
         saveReactionTime: true
     }
 ];
-
